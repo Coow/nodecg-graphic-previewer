@@ -1,0 +1,76 @@
+{
+  "name": "nodecg-graphic-previewer",
+  "version": "0.0.0",
+  "description": "Preview Graphics in the NodeCG Dashboard",
+  "homepage": "",
+  "author": {
+    "name": "Coow",
+    "email": " ",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^2.0.0",
+    "dashboardPanels": [
+      {
+        "name": "preview",
+        "title": "Preview",
+        "width": 4,
+        "file": "preview.html",
+        "headerColor": "#525F78"
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs --all",
+    "build:extension": "node scripts/build.mjs --skipBrowser --extension",
+    "watch": "node scripts/build.mjs --all --watch",
+    "watch:browser": "node scripts/build.mjs --dashboard --graphics --skipExtension --watch",
+    "watch:schemas": "node scripts/build.mjs --schemas --watch",
+    "dev": "concurrently --kill-others \"npm run watch:schemas\" \"npm run watch:browser\" \"nodemon\"",
+    "generate-schema-types": "trash src/types/schemas && nodecg schema-types"
+  },
+  "dependencies": {
+    "ts-node": "*",
+    "react": "*",
+    "react-dom": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*"
+  },
+  "devDependencies": {
+    "typescript": "*",
+    "@types/node": "*",
+    "@parcel/core": "*",
+    "@parcel/config-default": "*",
+    "@parcel/reporter-cli": "*",
+    "@parcel/validator-typescript": "*",
+    "glob": "*",
+    "trash-cli": "*",
+    "nodemon": "*",
+    "concurrently": "*",
+    "@nodecg/types": "^2.0.0"
+  },
+  "repository": "https://github.com/RisingEmpires/aoe4-stream-manager.git",
+  "license": "Apache-2.0"
+}

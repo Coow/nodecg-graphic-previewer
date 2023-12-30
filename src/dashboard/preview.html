@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+
+		.monospace {
+			font-family: monospace;
+		}
+
+		.wrapper {
+			width: 480px;
+			height: 270px;
+			border: black solid 1px;
+			
+		}
+
+		.preview {
+			width: 1920px;
+			height: 1080px;
+			transform: translate(-50%, 0rem) scale(0.249479);
+			position: relative;
+			left: 50%;
+			top: 0;
+			transform-origin: center top;
+			margin: 0px auto; 
+			overflow: hidden;
+		}
+
+		.preview iframe {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transform-origin: center center;
+			border: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="root"></div>
+	<script type="module" src="./preview-bootstrap.tsx"></script>
+</body>
+
+</html>
