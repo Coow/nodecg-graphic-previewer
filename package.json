@@ -68,7 +68,7 @@
     "@parcel/config-default": "*",
     "@parcel/reporter-cli": "*",
     "@parcel/validator-typescript": "*",
-    "glob": "*",
+    "glob": "^10.3.10",
     "trash-cli": "*",
     "nodemon": "*",
     "concurrently": "*",
