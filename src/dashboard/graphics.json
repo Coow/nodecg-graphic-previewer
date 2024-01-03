@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Lobby Screen",
+        "graphics": [
+            {
+                "url": "/bundles/aoe-4-civ-draft/graphics/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "url": "/bundles/aoe-4-series-manager/graphics/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "url": "/bundles/caster-manager/graphics/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "url": "/bundles/aoe4-score-display/graphics/LobbyScore.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "url": "/bundles/aoe-4-countdown-timer/graphics/index.html",
+                "width": 1920,
+                "height": 1080
+            }
+        ]
+    },
+    {
+        "title": "Ingame Screen",
+        "graphics": [
+            {
+                "url": "/bundles/aoe4-score-display/graphics/index.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "url": "/bundles/aoe4-map-selector/graphics/mapName.html",
+                "width": 1920,
+                "height": 1080
+            }
+        ]
+    }
+]
