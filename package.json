@@ -57,6 +57,7 @@
     "react-dom": "*",
     "nodecg": "^2.1.8",
     "nodecg-cli": "^8.6.8",
+    "glob": "^10.3.10",
     "@types/react": "*",
     "@types/react-dom": "*"
   },
