@@ -33,8 +33,8 @@ jobs:
       - name: Build bundle
         run: |
           npm run build --if-present --skipLibCheck
-          zip -r nodecg-graphic-previewer.zip package.json node_modules package-lock.json dashboard extension graphics README.md LICENSE
-          tar -cvf nodecg-graphic-previewer.tar package.json node_modules package-lock.json dashboard extension graphics README.md LICENSE
+          zip -r nodecg-graphic-previewer.zip package.json node_modules package-lock.json dashboard extension README.md LICENSE
+          tar -cvf nodecg-graphic-previewer.tar package.json node_modules package-lock.json dashboard extension README.md LICENSE
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
