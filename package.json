@@ -55,6 +55,8 @@
     "ts-node": "*",
     "react": "*",
     "react-dom": "*",
+    "nodecg": "^2.1.8",
+    "nodecg-cli": "^8.6.8",
     "@types/react": "*",
     "@types/react-dom": "*"
   },
